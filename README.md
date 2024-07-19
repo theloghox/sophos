@@ -1,6 +1,5 @@
 # Sophos Firewall Remote Shutdown
 Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
-De momento han sido probados en Linux | Para Windows requieren ciertas modificaciones.
 
 - shutdownsf.py (inseguro - contraseñas en texto plano)
 - secureshutdownsf.py (+seguro - utiliza claves SSH para conexiones seguras)
