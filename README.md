@@ -4,6 +4,12 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
 - shutdownsf.py (inseguro - contraseñas en texto plano)
 - secureshutdownsf.py (+seguro - utiliza claves SSH para conexiones seguras)
 
+# Usos
+- Respuesta a incidentes de seguridad: En caso de requerirse un apagado inmediato.
+- Desastres naturales: Apagar el equipo para protegerlo de daños eléctricos o físicos.
+- Apagado controlado: En caso de un apagado ejecutado por una UPS por ejemplo.
+- Dejame saber que otros usos le darías.
+
 ## Requisitos
 
 - Python 3.6 o superior
