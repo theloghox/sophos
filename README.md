@@ -103,7 +103,7 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     ssh_key = "C:\\Users\\TuUsuario\\.ssh\\id_rsa"  # Ruta de la clave SSH en Windows
     ```
 
-##+ Información
+## Información
   ```sh
     jvelez@digital-user.com
     ```
