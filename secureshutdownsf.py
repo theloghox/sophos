@@ -1,4 +1,4 @@
-# Autor: Jorge Mario Vélez Rincón [TheLoghox]
+# Autor: [TheLoghox]
 # Labs: Digital User SAS
 # Contacto: jvelez@digital-user.com
 
