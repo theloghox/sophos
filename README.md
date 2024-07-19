@@ -1,8 +1,9 @@
 # Sophos Firewall Remote Shutdown
 Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
+De momento han sido probados en Linux | Para Windows requieren ciertas modificaciones.
 
 - shutdownsf.py (inseguro - contraseñas en texto plano)
-- secureshutdownsf.py (+seguro - utiliza)
+- secureshutdownsf.py (+seguro - utiliza claves SSH para conexiones seguras)
 
 ## Requisitos
 
@@ -51,7 +52,7 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     cd sophos
     ```
 
-2. Modifica el script con los valores correctos para `hostname`, `username` y `password`.
+2. Modifica el script shutdownsf.py con los valores correctos para `hostname`, `username` y `password`.
 
 3. Ejecuta el script:
 
@@ -65,37 +66,33 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     python3 shutdownsf.py
     ```
 
-### Si vas a utilizar secureshutdownsf 
+### Si vas a utilizar secureshutdownsf.py (Mayor seguridad)
 
 ### Generar e Importar una Clave SSH
 
 1. **Generar una Clave SSH**:
     - En Windows (PowerShell) o Linux/MacOS (Terminal):
     ```sh
-    ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
+    ssh-keygen -t rsa -b 2048 -f C:\Users\TuUsuario\.ssh\id_rsa
     ```
 
 2. **Copiar la Clave Pública al Firewall**:
-    - Obtener la clave pública:
+    - Obtener la clave pública en Windows:
     ```sh
-    cat ~/.ssh/id_rsa.pub
+    La encontrarás en C:\Users\TuUsuario\.ssh\id_rsa.pub
     ```
     - Acceder al firewall y agregar la clave pública:
     ```sh
     Administración > Acceso al dispositivo > Autenticación de clave pública para el administrador
     Pega el contenido del archivo id_rsa.pub
-    ![image](https://github.com/user-attachments/assets/387eeaed-cfcd-421a-8a84-efe9d851ae0f)
+    ![authentication-ssh](https://github.com/user-attachments/assets/0e744fa6-c8ee-4f29-a50f-da7bbc2e15d9)
     No olvides Aplicar los cambios
     ```
 
-3. **Modificar el archivo **:
-    - Obtener la clave pública:
+3. **Modificar el archivo secureshutdownsf.py (Windows) **:
+    - Modifica la ruta a la clave privada:
     ```sh
-    cat ~/.ssh/id_rsa.pub
-    ```
-    - Acceder al firewall y agregar la clave pública:
-    ```sh
-    echo "tu_clave_publica" >> ~/.ssh/authorized_keys
+    ssh_key = "C:\\Users\\TuUsuario\\.ssh\\id_rsa"  # Ruta de la clave SSH en Windows
     ```
 
 
