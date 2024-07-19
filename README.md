@@ -97,11 +97,22 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     No olvides Aplicar los cambios
     ```
 
-3. **Modificar el archivo secureshutdownsf.py (Windows) **:
+3. **Modificar el archivo secureshutdownsf.py (Windows)**:
     - Modifica la ruta a la clave privada:
     ```sh
     ssh_key = "C:\\Users\\TuUsuario\\.ssh\\id_rsa"  # Ruta de la clave SSH en Windows
     ```
 
+##+ Información
+  ```sh
+    jvelez@digital-user.com
+    ```
+  ```sh
+    Únete a la comunidad de Facebook "Academia Sophos en Español"
+    ```
+
+  ```sh
+    Este script fue creado en los Laboratorios de [Digital user SAS] (https://www.digital-user.com).
+    ```
 
 
