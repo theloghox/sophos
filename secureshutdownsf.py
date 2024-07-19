@@ -1,5 +1,5 @@
 # Autor: Jorge Mario Vélez Rincón [TheLoghox]
-# Empresa: Digital User SAS
+# Labs: Digital User SAS
 # Contacto: jvelez@digital-user.com
 
 import pexpect
