@@ -47,11 +47,11 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
 
 1. Clona este repositorio:
     ```sh
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    cd tu_repositorio
+    git clone https://github.com/theloghox/sophos.git
+    cd sophos
     ```
 
-2. Modifica el script `script.py` con los valores correctos para `hostname`, `username` y `password`.
+2. Modifica el script con los valores correctos para `hostname`, `username` y `password`.
 
 3. Ejecuta el script:
 
