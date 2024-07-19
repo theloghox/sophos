@@ -57,14 +57,33 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
 
     - **Windows**:
     ```sh
-    python script.py
+    python shutdownsf.py
     ```
 
     - **Linux**:
     ```sh
-    python3 script.py
+    python3 shutdownsf.py
     ```
 
+### Si vas a utilizar secureshutdownsf 
+
+### Generar e Importar una Clave SSH
+
+1. **Generar una Clave SSH**:
+    - En Windows (PowerShell) o Linux/MacOS (Terminal):
+    ```sh
+    ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
+    ```
+
+2. **Copiar la Clave Pública al Firewall**:
+    - Obtener la clave pública:
+    ```sh
+    cat ~/.ssh/id_rsa.pub
+    ```
+    - Acceder al firewall y agregar la clave pública:
+    ```sh
+    echo "tu_clave_publica" >> ~/.ssh/authorized_keys
+    ```
 
 
 
