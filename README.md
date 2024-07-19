@@ -114,11 +114,11 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
   ```
 - Comunidad en Telegram:
   ```sh
-    Únete a la comunidad de Facebook "Academia Sophos en Español"
+    Únete a la comunidad de [Telegram "Academia Sophos en Español"](https://t.me/+KvVvp7YSQsswYWE5)
   ```
 - Date una pasada:
   ```sh
-    Este script fue creado en los Laboratorios de [Digital user SAS] (https://www.digital-user.com).
+    Este script fue creado en los Laboratorios de [Digital User](https://www.digital-user.com/)
   ```
 
 
