@@ -104,11 +104,15 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     ```
 
 ## Información
- - Email:
+- Email:
   ```sh
     jvelez@digital-user.com
   ```
-- Comunidad:
+- Comunidad en Facebook:
+  ```sh
+    Únete a la comunidad de Facebook "Academia Sophos en Español"
+  ```
+- Comunidad en Telegram:
   ```sh
     Únete a la comunidad de Facebook "Academia Sophos en Español"
   ```
