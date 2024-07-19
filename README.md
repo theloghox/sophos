@@ -75,10 +75,19 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     ssh-keygen -t rsa -b 2048 -f C:\Users\TuUsuario\.ssh\id_rsa
     ```
 
+   - En Linux/MacOS (Terminal):
+    ```sh
+    ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
+    ```
+
 2. **Copiar la Clave Pública al Firewall**:
     - Obtener la clave pública en Windows:
     ```sh
     La encontrarás en C:\Users\TuUsuario\.ssh\id_rsa.pub
+    ```
+     - Obtener la clave pública en Linux:
+    ```sh
+    La encontrarás en ~/.ssh/id_rsa.pub
     ```
     - Acceder al firewall y agregar la clave pública:
     ```sh
