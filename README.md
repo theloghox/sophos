@@ -28,7 +28,7 @@ Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
 2. **Instalar `paramiko`**:
     - Abre PowerShell o la terminal de comandos y ejecuta:
     ```sh
-    pip install paramiko       > Si vas a utilizar el script de Windows
+    pip install paramiko    
     ```
 
 ### Linux
