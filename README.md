@@ -4,7 +4,7 @@ Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
 - shutdownsf.py (inseguro | pass en texto plano | Probado en Linux kali 6.6.15-amd64)
 - secureshutdownsf.py (+seguro | utiliza claves SSH para conexiones seguras | Probado en Linux kali 6.6.15-amd64)
 - winshutdownsf.py (inseguro | contraseñas en texto plano | Probado en Windows 10)
-- Nota: Seguimos trabajando para un script +seguro para Windows (prox).
+  ### Nota: Seguimos trabajando para un script +seguro para Windows (prox).
 
 # Usos
 - Respuesta a incidentes de seguridad: En caso de requerirse un apagado inmediato.
