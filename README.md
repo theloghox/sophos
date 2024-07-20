@@ -24,10 +24,9 @@ Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
     - Descarga e instala Python desde [python.org](https://www.python.org/downloads/windows/).
     - Asegúrate de marcar la opción "Add Python to PATH" durante la instalación.
 
-2. **Instalar `pexpect` y `paramiko`**:
+2. **Instalar `paramiko`**:
     - Abre PowerShell o la terminal de comandos y ejecuta:
     ```sh
-    pip install pexpect        > Si vas a utilizar el script de Linux
     pip install paramiko       > Si vas a utilizar el script de Windows
     ```
 
