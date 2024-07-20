@@ -1,5 +1,5 @@
 import pexpect
-import pexpect.winpty
+import winpty
 
 # Reemplaza estos valores con los correctos
 hostname = "172.16.16.16"
