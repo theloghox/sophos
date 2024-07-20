@@ -92,10 +92,9 @@ Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
     ```
     - Acceder al firewall y agregar la clave pública:
     ```sh
-    Administración > Acceso al dispositivo > Autenticación de clave pública para el administrador
-    Pega el contenido del archivo id_rsa.pub
-    ![authentication-ssh](https://github.com/user-attachments/assets/0e744fa6-c8ee-4f29-a50f-da7bbc2e15d9)
-    No olvides Aplicar los cambios
+     - Administración > Acceso al dispositivo > Autenticación de clave pública para el administrador.
+     - Pega el contenido del archivo id_rsa.pub.
+     - No olvides Aplicar los cambios.
     ```
 
 ## Información
