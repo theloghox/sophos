@@ -56,7 +56,7 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     git clone https://github.com/theloghox/sophos.git
     cd sophos
     ```
-    ## Si el comando no funciona
+    ### Si el comando no funciona
     - Instala Git | Descargalo de [GIT](https://git-scm.com/).
     - Si no deseas instalar Git puedes descargar el repositorio de GitHub directamente  Code > Download Zip.
 
