@@ -51,8 +51,5 @@ child.sendline("S")
 #Interactuar con la CLI
 child.interact()
 
-# Mostrar la salida después de confirmar el apagado
-#print(child.before.decode('utf-8'))
-
 #Cerrar sesión SSH
 child.close()
