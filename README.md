@@ -79,21 +79,12 @@ Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
 ### Generar e Importar una Clave SSH
 
 1. **Generar una Clave SSH**:
-    - En Windows (PowerShell):
-    ```sh
-    ssh-keygen -t rsa -b 2048 -f C:\Users\TuUsuario\.ssh\id_rsa
-    ```
-
    - En Linux/MacOS (Terminal):
     ```sh
     ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
     ```
 
 2. **Copiar la Clave Pública al Firewall**:
-    - Obtener la clave pública en Windows:
-    ```sh
-    La encontrarás en C:\Users\TuUsuario\.ssh\id_rsa.pub
-    ```
      - Obtener la clave pública en Linux:
     ```sh
     La encontrarás en ~/.ssh/id_rsa.pub
@@ -104,12 +95,6 @@ Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
     Pega el contenido del archivo id_rsa.pub
     ![authentication-ssh](https://github.com/user-attachments/assets/0e744fa6-c8ee-4f29-a50f-da7bbc2e15d9)
     No olvides Aplicar los cambios
-    ```
-
-3. **Modificar el archivo secureshutdownsf.py (Windows)**:
-    - Modifica la ruta a la clave privada:
-    ```sh
-    ssh_key = "C:\\Users\\TuUsuario\\.ssh\\id_rsa"  # Ruta de la clave SSH en Windows
     ```
 
 ## Información
