@@ -1,8 +1,9 @@
 # Sophos Firewall Remote Shutdown
-Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
+Este repositorio contiene 3 scripts para el apagado remoto de tu Sophos Firewall
 
-- shutdownsf.py (inseguro - contraseñas en texto plano)
-- secureshutdownsf.py (+seguro - utiliza claves SSH para conexiones seguras)
+- shutdownsf.py (inseguro | pass en texto plano | Probado en Linux kali 6.6.15-amd64)
+- secureshutdownsf.py (+seguro | utiliza claves SSH para conexiones seguras | Probado en Linux kali 6.6.15-amd64)
+- winshutdownsf.py (inseguro | contraseñas en texto plano | Probado en Windows 10)
 
 # Usos
 - Respuesta a incidentes de seguridad: En caso de requerirse un apagado inmediato.
@@ -13,7 +14,7 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
 ## Requisitos
 
 - Python 3.6 o superior
-- Bibliotecas `pexpect` y `pywinpty` (esta última solo es necesaria para Windows)
+- Bibliotecas `pexpect` y `paramiko` (esta última solo es necesaria para Windows)
 
 ## Instalación
 
@@ -26,8 +27,8 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
 2. **Instalar `pexpect` y `pywinpty`**:
     - Abre PowerShell o la terminal de comandos y ejecuta:
     ```sh
-    pip install pexpect
-    pip install pywinpty
+    pip install pexpect        > Si vas a utilizar el script de Linux
+    pip install paramiko       > Si vas a utilizar el script de Windows
     ```
 
 ### Linux
@@ -56,7 +57,7 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
     git clone https://github.com/theloghox/sophos.git
     cd sophos
     ```
-    ### Si el comando no funciona
+    ### Si el comando no funciona en Windows
     - Instala Git | Descargalo de [GIT](https://git-scm.com/).
     - Si no deseas instalar Git puedes descargar el repositorio de GitHub directamente  Code > Download Zip.
 
@@ -66,15 +67,15 @@ Este repositorio contiene 2 scripts para el apagado remoto de tu Sophos Firewall
 
     - **Windows**:
     ```sh
-    python shutdownsf.py
+    python winshutdownsf.py
     ```
 
     - **Linux**:
     ```sh
-    python3 shutdownsf.py
+    python shutdownsf.py
     ```
 
-### Si vas a utilizar secureshutdownsf.py (Mayor seguridad)
+### Si vas a utilizar secureshutdownsf.py (Mayor seguridad | Probado en Kali Linux)
 
 ### Generar e Importar una Clave SSH
 
